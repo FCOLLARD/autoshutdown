@@ -9,7 +9,7 @@ REM    This scripts then will launch a shutdown command .
 REM   Expected status of java to perform shutdown is 999
 
 
-REM   
+REM   Modif au niveau github.com
 
 echo.
 for /F %%i IN ('hostname' ); DO set LOCALHOST=%%i
