@@ -10,6 +10,7 @@ REM   Expected status of java to perform shutdown is 999
 
 
 REM   Modif au niveau github.com
+REM   Modif sous Netbeans apres Branche 
 
 echo.
 for /F %%i IN ('hostname' ); DO set LOCALHOST=%%i
