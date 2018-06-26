@@ -2,7 +2,7 @@ import java.sql.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
+// je ne veux plus voir ca
 public class EzJava
 {
     public static Statement stmt;
