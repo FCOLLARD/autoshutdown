@@ -48,7 +48,7 @@ REM  Syntax For DB2
 REM       autoshutdown.cmd db2://C1WC1WC1229:50000/TIPLUS2        TIZONE28   T!Z0N3123
 REM                     %DB_TYPE%://%SERVER%:50000/%DBNAME%          %USER%    %PASSWD%
 REM split:            [DB_TYPE=db2]      [SERVER=C1WC1WC1229]      [DBNAME=TIPLUS2]    [USER=TIZONE28]     [PASSWD=T!Z0N3123]
-REM   java -jar dist\autoshutdown.jar    db2://C1WC1WC1229:50000/TIPLUS2         TIZONE28   T!Z0N3123
+REM   java -jar ..\dist\autoshutdown.jar    db2://C1WC1WC1229:50000/TIPLUS2         TIZONE28   T!Z0N3123
 if %URL:~0,3% == db2    for /F "tokens=1,2,3,4 delims=:/" %%a in ("%URL%"); do (
     SET DB_TYPE=%%a 
     SET SERVER=%%b 
