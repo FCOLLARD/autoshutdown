@@ -1,0 +1,8 @@
+@echo OFF
+REM   Test a
+for %I in c1wc1wcs1222 C1WC1WC1229 C1WCSFBC1235 C1WCSFBC1236 C1WCSFBC1237 C1WCSFBC1238 C1WCSFBC1238 C1WCSFBC1239 do ( 
+echo  USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+query user /server %%i | findstr "Active Disc"
+)
+
+
