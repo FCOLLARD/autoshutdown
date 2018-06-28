@@ -108,11 +108,11 @@ echo.
 echo  2- Searching Active Remote Desktop Users...
 QUERY.exe user /server %SERVER_TO_KILL% | findstr "Active" && IF NOT @%DEBUG% == @ set /P W="WARNING: Active connections are present on %SERVER_TO_KILL%. Press return to continue..."
  
-echo 3- About to run java -jar dist\autoshutdown.jar %* %NBLOOPS%
+echo 3- About to run java -jar ..\dist\autoshutdown.jar %* %NBLOOPS%
 IF NOT @%DEBUG% == @ set /P xx="Press return to continue..."
 
 echo %TIME% : Idle detection started...
-java -jar dist\autoshutdown.jar %* %NBLOOPS%
+java -jar ..\dist\autoshutdown.jar %* %NBLOOPS%
 
 goto :ENDING_%ERRORLEVEL%
 goto :ENDING_1
